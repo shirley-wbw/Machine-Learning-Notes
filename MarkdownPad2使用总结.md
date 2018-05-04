@@ -1,7 +1,7 @@
 ### MarkdownPad2使用总结 ###
 2018/5/3 21:55:06 
 1. 工具-在浏览器中预览，快捷键F6
-
+## 插入用法 ##
 1. 插入时间戳：Ctrl+T
 2. 插入粗体：Ctrl+B
 3. 插入斜体：Ctrl+I
@@ -24,7 +24,7 @@
 |1|2|3|
 |4|5|6|
 1. 跨表格编号连续：表格首行缩进即可。
-2. 流程图与时序图：
+2. **流程图与时序图：（存在问题，待解决）**
 > '''flow
 > st=>start:Start
 > e=>end
@@ -44,3 +44,7 @@ st->op->cond
 cond(yes)->e
 cond(no)->op
 '''
+
+
+1. [https://mp.weixin.qq.com/s?__biz=MzAxNzI4MTMwMw==&mid=2651629983&idx=2&sn=749589cc7213c3e755fddeb210563815#rd](https://mp.weixin.qq.com/s?__biz=MzAxNzI4MTMwMw==&mid=2651629983&idx=2&sn=749589cc7213c3e755fddeb210563815#rd "Markdown Here 教程")
+
