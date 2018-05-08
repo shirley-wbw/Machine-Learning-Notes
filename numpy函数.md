@@ -55,4 +55,28 @@
 
 ## fromfunction以函数式创建数组 ##
 - 先from numpy import *
-- 用法同zeros，empty函数创建的数组所有元素均为随机无意义的值
+- 用法:def func(i):return i*2。a=fromfunction(func,(5,))，则a=array([0,2,4,6,8])。
+- 若def func1(i,j):return i*j。b=fromfunction(func1,(5,6))，则i的值从0取到4，j的值从0取到5，组成数组5×6。
+
+## 数组切片 ##
+- 先from numpy import *
+- 用法同range的切片。
+- 切片数组共享内存，若改变其一，另一随之改变。若要保持不变，需用copy方法获取数组。如b=a.copy()，这时改变b，a不会随之变化。
+
+## 数组下标获取 ##
+- 先from numpy import *
+- 创建数组a=arange(2,5)，则a=array([2,3,4])，设b=a[[0,2]]，则b=array([2,4])，令b[0]=5，a不会随b改变。
+
+## 多维数组切片 ##
+- 先from numpy import *
+- 如创建数组a为6行6列的二维数组，设b=a[对第0维,对第1维]。
+
+## diag函数 ##
+- 先import numpy
+- x=numpy.diag((1,2,3))创建出对角为1,2,3其余为0的三行三列二维数组x。
+- 此时y=numpy.diag(x)=array([1,2,3])，是一个一维数组。
+
+## all()和any() ##
+- 先import numpy
+- 设数组a，b=a.copy，则（a==b).all()返回Ture，即检测a，b中对应元素是否均相等。
+- （a==b).any()则是只要有一个对应元素相等就返回Ture。
